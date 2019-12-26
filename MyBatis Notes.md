@@ -1,6 +1,5 @@
-
-## MyBatis
-### SqlSessionFactoryBuilder -> SqlSessionFactory -> SqlSession -> Mapper
+# MyBatis
+## SqlSessionFactoryBuilder -> SqlSessionFactory -> SqlSession -> Mapper
 学习MyBatis要首先分清楚这几个概念：
 + **SqlSessionFactoryBuilder**：构造器，根据配置信息负责生成SqlSessionFactory（工厂接口）。
 + **SqlSessionFactory**：依靠本工厂接口来生成SqlSession。
@@ -46,12 +45,12 @@ try (SqlSession session = sqlSessionFactory.openSession()) {
 }
 ```
 但是以上方法有个缺点，就是有可能有的值会被强制类型转换，因此有另外一种方法
-、、、
+```
 try (SqlSession session = sqlSessionFactory.openSession()) {
   BlogMapper mapper = session.getMapper(BlogMapper.class);
   Blog blog = mapper.selectBlog(101);
 }
-、、、
+```
 我们可以通过BlogMapper.class这个类描述返回值的类型。
 
 ### Mapper
