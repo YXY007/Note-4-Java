@@ -1,6 +1,6 @@
 
 ## MyBatis
-## SqlSessionFactoryBuilder -> SqlSessionFactory -> SqlSession -> Mapper
+### SqlSessionFactoryBuilder -> SqlSessionFactory -> SqlSession -> Mapper
 学习MyBatis要首先分清楚这几个概念：
 + **SqlSessionFactoryBuilder**：构造器，根据配置信息负责生成SqlSessionFactory（工厂接口）。
 + **SqlSessionFactory**：依靠本工厂接口来生成SqlSession。
